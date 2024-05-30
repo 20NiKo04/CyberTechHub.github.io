@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+html,
+body {
+    transition: all .5s;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: block;
+    font-family: Comfortaa, serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+.p {
+    color: aquamarine;
+}
+
+/* navbar */
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fcfcfc;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-toggler {
+    color: rgb(142, 142, 142);
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(142, 142, 142);
+}
+
+/* cards */
+
+.card {
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.card-body {
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+.card-title {
+    width: 100%;
+    height: 4em;
+}
+
+.card img {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.intro {
+    color: aquamarine;
+}
+
+/* index */
+
+.sidebar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: aquamarine;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    font-size: clamp(0.5rem, 0.75vw, 3rem);
+}
+
+.slide-text {
+    padding: 0.5em;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+.slide-text a{
+    transition: all .5s;
+    color: aquamarine;
+    font-size: clamp(1.5rem, 1.2vw, 3rem);
+    margin-right: 1em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-text a:hover{
+    color: aquamarine;
+}
+
+.slide-text p{
+    transition: all .5s;
+    padding-left: 1rem;
+    text-indent: 2rem;
+    font-size: clamp(0.5rem, 0.75vw, 3rem);
+    padding-right: 3.5em;
+}
+.carousel-inner{
+    border-radius: 1rem;
+}
+.carousel-control-prev-icon {
+    margin-right: 75px;
+}
+
+.carousel-control-next-icon {
+    margin-left: 75px;
+}
+
+/*
+
+.aboutElContent {
+    max-width: 310px;
+    padding-left: 66px;
+    position: relative;
+}
+*/
+.el-contant-out{
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+    margin: auto;
+    height: 100%;
+    border: 2px solid aquamarine;
+    border-radius: 15px;
+}
+
+.el-contant-out:hover{
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+.el-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    height: 75px;
+    width: 75px;
+}
+
+.el-text{
+    transform: translateY(0%);
+    top: 50%;
+}
+.el-text p{
+    transition: all .5s;
+    margin: auto;
+    font-size: clamp(0.5rem, 1vw, 3rem);
+    color: aquamarine;
+}
+.el-text a{
+    transition: all .5s;
+    color: aquamarine;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+
+.videoIntroText {
+    color: aquamarine;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    transition: all .5s;
+    width: 40%;
+}
+.videoIntroTitle {
+    color: aquamarine;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-weight: 700;
+    line-height: 2em;
+}
+.contact-box{
+    margin-top: 2em;
+}
+.social.tal {
+    align-items: start;
+    justify-content: start;
+}
+.social {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    margin-top: 4em;
+    border-top: 1px solid rgb(99, 99, 99);
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+.footer-text {
+    justify-content: center;
+}
+
+.bottom-info{
+    font-size: xx-small;
+}
+
+.call-anim{
+    animation: myAnim 1s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+
